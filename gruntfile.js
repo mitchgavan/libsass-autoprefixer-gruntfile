@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             options: {
                 map: true,
                 processors: [
-                    require('autoprefixer-core')({browsers: ['last 2 versions', 'ie 9'})
+                    require('autoprefixer-core')({browsers: ['last 2 versions', 'ie 9']})
                 ]
             },
             dist: {
@@ -47,6 +47,6 @@ module.exports = function (grunt) {
 
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['sass', 'autoprefixer']);
+    grunt.registerTask('default', ['sass', 'postcss']);
 
 };
