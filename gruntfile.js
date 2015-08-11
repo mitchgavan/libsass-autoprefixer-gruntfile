@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['main.scss'],
-                tasks: ['sass', 'autoprefixer'],
+                tasks: ['sass', 'postcss'],
                 options: {
                     spawn: false,
                     livereload: true,
